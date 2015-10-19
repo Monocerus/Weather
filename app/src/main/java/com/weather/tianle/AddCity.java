@@ -21,17 +21,11 @@ import android.widget.TextView;
 public class AddCity extends Activity {
 
     DBManagerCity dbManagerCity = null;  //creat the database of city.db
-
     DBCityHelper dbCityHelper = null;   //manager of the city,db
-
     ListView searchList = null;   //search result
-
-    TextView tvSearch = null; //文本输入框
-
+    TextView tvSearch = null; //文本输入
     String [] hotCityList = null;  //the list of the hotCity
-
     CityListSharePrefer cityList = null; //城市信息记录表
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,12 +41,9 @@ public class AddCity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //添加该城市到城市列表，并跳转到主界面
                 cityList.addCity(hotCityList[position]);
-
                 Intent intent = new Intent(AddCity.this, MainActivity.class);
-
                 intent.putExtra("position",cityList.getCityList().size()-1);  //传递数据
                 startActivity(intent);
-                finish();
             }
         });
 

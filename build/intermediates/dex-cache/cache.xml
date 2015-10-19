@@ -2,46 +2,46 @@
 <items version="2" >
 
     <item
-        jar="E:\anworkspace\Weather\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="E:\anworkspace\Weather\app\build\intermediates\pre-dexed\debug\classes-d2397399e548be6cd244ccb52c6c4c420cb5dab7.jar" />
-    </item>
-    <item
-        jar="E:\anworkspace\Weather\app\libs\fastjson-1.2.5.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="9f675e9a1b2bf1224183005752a9214226e8aa8e">
-        <dex dex="E:\anworkspace\Weather\app\build\intermediates\pre-dexed\debug\fastjson-1.2.5-185c49ea57fa9876c50defbdd92b2aeebd768258.jar" />
-    </item>
-    <item
-        jar="E:\anworkspace\Weather\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="E:\anworkspace\Weather\app\build\intermediates\pre-dexed\debug\classes-8ba1c45459f65c0ac16829c5a37a3a783eda0cb4.jar" />
-    </item>
-    <item
-        jar="D:\Program Files\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jar="E:\Program Files (x86)\Android\Android SDK\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="E:\anworkspace\Weather\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-a74c839921eb315ab82d1c54aec47e59e5675d1f.jar" />
+        <dex dex="E:\MyApplication\Weather\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-7d404a565fd0740ceeb57f3aad476e5f792d1b83.jar" />
     </item>
     <item
-        jar="E:\anworkspace\Weather\app\build\intermediates\exploded-aar\Weather\library\unspecified\jars\classes.jar"
+        jar="E:\MyApplication\Weather\app\libs\fastjson-1.2.5.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="d54497ce4097799734bb5071b80494f0823224fb">
-        <dex dex="E:\anworkspace\Weather\app\build\intermediates\pre-dexed\debug\classes-5a50ddcf879b0ba716594808599d6da06c9559ad.jar" />
+        sha1="9f675e9a1b2bf1224183005752a9214226e8aa8e">
+        <dex dex="E:\MyApplication\Weather\app\build\intermediates\pre-dexed\debug\fastjson-1.2.5-969b60694d102039fd7f47e8023da143f83fd2ec.jar" />
     </item>
     <item
-        jar="E:\anworkspace\Weather\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jar="E:\MyApplication\Weather\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="E:\MyApplication\Weather\app\build\intermediates\pre-dexed\debug\classes-d545f46302fb938cb77b4d3a5c3a89088653213a.jar" />
+    </item>
+    <item
+        jar="E:\MyApplication\Weather\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="E:\anworkspace\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-c4fa95823670e7d5c305f90c92f3acc84ee57f28.jar" />
+        <dex dex="E:\MyApplication\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-04217d41969461328d2a8a854077fd140aa9547a.jar" />
+    </item>
+    <item
+        jar="E:\MyApplication\Weather\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="E:\MyApplication\Weather\app\build\intermediates\pre-dexed\debug\classes-eb9bf28fe328ba916c03a13ab20f7ff26eade07d.jar" />
+    </item>
+    <item
+        jar="E:\MyApplication\Weather\app\build\intermediates\exploded-aar\Weather\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d391fdb5d041265f2a14f107e479ca49b77bf2ad">
+        <dex dex="E:\MyApplication\Weather\app\build\intermediates\pre-dexed\debug\classes-8daa71d1332f18af02a9a5b3710cfee77533ed07.jar" />
     </item>
 
 </items>

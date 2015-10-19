@@ -14,8 +14,9 @@ import java.util.ArrayList;
 public class FragmentMainAdaptor extends FragmentStatePagerAdapter {
 
     Weather[] weathers;
-    public FragmentMainAdaptor(FragmentManager fm) {
+    public FragmentMainAdaptor(FragmentManager fm,Weather[] weathers) {
         super(fm);
+        this.weathers = weathers;
     }
 
     public Weather[] getWeathers() {
@@ -35,8 +36,8 @@ public class FragmentMainAdaptor extends FragmentStatePagerAdapter {
     public Fragment getItem(int arg0) {
         return BlankFragment.newInstance(weathers[arg0]);
     }
-    @Override
-    public Object instantiateItem(ViewGroup container, int position) {
-        return super.instantiateItem(container, position);
-    }
+//    @Override
+//    public Object instantiateItem(ViewGroup container, int position) {
+//        return super.instantiateItem(container, position);
+//    }
 }

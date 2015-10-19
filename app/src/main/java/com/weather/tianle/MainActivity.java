@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,11 +36,12 @@ public class MainActivity extends FragmentActivity {
             startActivity(intent);
             finish();
         }
-        fragmentMainAdaptor = new FragmentMainAdaptor(getSupportFragmentManager());
-        viewPager.setAdapter(fragmentMainAdaptor);
         //获取城市信息
-        weatherAsyncTask = new WeatherAsyncTask();
-        weatherAsyncTask.execute((String[]) listCity.toArray(new String[listCity.size()]));
+        if(NetWorkState.isNetworkConnected(this)==true)
+        {
+            weatherAsyncTask = new WeatherAsyncTask();
+            weatherAsyncTask.execute((String[]) listCity.toArray(new String[listCity.size()]));
+        }
         cityName.setText(listCity.get(0));
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -103,13 +105,15 @@ public class MainActivity extends FragmentActivity {
             for(int i = 0;i<size;i++)
             {
                 weathers[i] = WeatherHttpServer.getDateFromInternet(params[i]);
+                Log.e("jjjjjjjjjjj",weathers[i].toString());
             }
             return weathers;
         }
         @Override
         protected void onPostExecute(Weather[] weathers) {   //更新ui
             super.onPostExecute(weathers);
-            fragmentMainAdaptor.setWeathers(weathers);
+            fragmentMainAdaptor = new FragmentMainAdaptor(getSupportFragmentManager(),weathers);
+            viewPager.setAdapter(fragmentMainAdaptor);
             fragmentMainAdaptor.notifyDataSetChanged();
         }
     }

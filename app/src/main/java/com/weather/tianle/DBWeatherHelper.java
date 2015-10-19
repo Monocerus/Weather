@@ -13,7 +13,7 @@ public class DBWeatherHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 //    private static final String CREAT_TB_CURRENT_WEATHER = "create table if not exists tb_current_weather(_id integer primary key autoincrement, city text not null ," +
 //            "current_date text, update_time text, current_weather text)";
-    private static final String CREAT_TB_WEEK_WEATHER = "create table if not exists tb_week_weather(_id integer primary key autoincrement,order integer not null ,city text not null," +
+    private static final String CREAT_TB_WEEK_WEATHER = "create table if not exists tb_week_weather(_id integer primary key autoincrement,day_order integer not null ,city text not null," +
             "thedate text, week text, condition text,direction text,wind text,humidity text,body_temp1 integer,body_temp2 integer,cont_msg text,air_condition_msg text,"+
             "low integer,high integer,carwash_msg text,dress_msg text,rays_msg text)";
     public DBWeatherHelper(Context context) {

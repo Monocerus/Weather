@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,6 +57,7 @@ public class BlankFragment extends Fragment {
         BlankFragment fragment = new BlankFragment();
         Bundle args = new Bundle();
         args.putSerializable("weather",weather);
+//        Log.e("66666666666666666666666",weather.toString());
         fragment.setArguments(args);
         return fragment;
     }
@@ -86,7 +88,6 @@ public class BlankFragment extends Fragment {
         tv_dress_msg = (TextView)rootView.findViewById(R.id.tv_dress_msg);
         tv_rays_msg = (TextView)rootView.findViewById(R.id.tv_rays_msg);
         tv_wash_car = (TextView)rootView.findViewById(R.id.tv_wash_car);
-
         scrollView = (ScrollView)rootView.findViewById(R.id.scrollView);
 
 
